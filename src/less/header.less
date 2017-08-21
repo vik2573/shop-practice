@@ -1,0 +1,68 @@
+@import "partials/params";
+@import "partials/mixin";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+
+  & .logo {
+    margin: 8px 0 0 30px;
+  }
+  & .wrapper-head {
+    & .head-contact {
+      background: #f8fafb /*url(images/phone-img.jpg) right no-repeat*/;
+      position: relative;
+      border: 2px solid #edf2f6;
+      border-radius: 0 0 10px 10px;
+      text-align: right;
+      margin: 0 6px 0 0;
+      padding: 5px 56px 5px 10px;
+
+      & p {
+        font-size: 14px;
+        font-family: Verdana, Genera, sans-serif;
+        & span {
+          font-size: 21px;
+          font-weight: bold;
+        }
+      }
+
+      & img {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+      }
+      & .contact-fone {
+        margin-bottom: 10px;
+        padding-right: 10px;
+      }
+      & .contact-time {
+        color: #707172;
+        & span {
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+    }
+    & .search-head {
+      margin: 6px 6px 0 0;
+      background: url(images/bg-search.jpg) no-repeat;
+      width: 305px;
+      height: 29px;
+      & form {
+        & input {
+          width: 210px;
+          margin: 6px 23px 3px 10px;
+          border: 1px solid #fff;
+          font-size: 12px;
+        }
+        & .btn {
+          border: none;
+          padding: 0;
+          background: #e3e5e5;
+        }
+      }
+    }
+  }
+}
