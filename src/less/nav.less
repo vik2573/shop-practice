@@ -1,0 +1,40 @@
+@import "partials/params";
+@import "partials/mixin";
+
+
+ .menu {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 50px;
+   background: @menu-color;
+
+
+   & a {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+     width: 100%;
+     height: inherit;
+     font-size: 14px;
+     font-family: Verdana, Genera, sans-serif;
+     color: #fff;
+     background: @a_menu-color;
+     border-left: 1px solid #339bd1;
+     border-right: 1px solid #0c5984;
+   }
+   & a:first-child {
+     border-left: none;
+   }
+   & a:last-child {
+     border-right: none;
+   }
+   & a:hover {
+     background: #01496f url(images/menu-bg-light.png) center top;
+     border-left: 1px solid #01496f;
+     border-right: 1px solid #01496f;
+   }
+  }
