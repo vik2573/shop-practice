@@ -9,18 +9,17 @@
   margin-top: 5px;
   margin-left: 6px;
   margin-right: 6px;
-  height: 600px;
   & .aside-left {
     height: inherit;
     flex: 1;
     background: @bar-color;
     & h2 {
-      color: #fff;
+      color: @font-wight-color;
       font-size: 18px;
       font-weight: 400;
       background: @grad-color;
       border-radius: 3px 3px 0 0;
-      & span {
+      & .gloss-bg {
         display: block;
         background: @gloss-bg-color;
         padding: 10px 10px 10px 7px;
@@ -43,13 +42,42 @@
     }
     & .nav-leader {
       background: @leader-lab-color;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #e1e1e1;
+      .border-form;
     }
     & .nav-sale {
       background: @sale-lab-color;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #e1e1e1;
+      .border-form;
+    }
+    & h4 {
+      color: @font-wight-color;
+      font-size: 14px;
+      font-weight: bold;
+      background: @grad-color;
+      & .gloss-bg {
+        display: block;
+        background: @gloss-bg-color;
+        padding: 10px;
+      }
+    }
+    & .nav-catalog {
+      padding: 10px 10px 20px 58px;
+      list-style: @disc-style;
+      .border-form;
+      & li {
+        margin: 0 0 5px 0;
+        & a {
+          font-size: 14px;
+          color: @font-color;
+        }
+        & a:hover {
+          font-size: 15px;
+          color: @font-hover-color;
+        }
+        & ul {
+          list-style: none;
+          padding-left: 25px;
+        }
+      }
     }
   }
   & .section {
