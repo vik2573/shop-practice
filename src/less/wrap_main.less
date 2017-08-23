@@ -1,0 +1,66 @@
+@import "partials/params";
+@import "partials/mixin";
+
+.wrapper-main {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
+  height: 600px;
+  & .aside-left {
+    height: inherit;
+    flex: 1;
+    background: @bar-color;
+    & h2 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      background: @grad-color;
+      border-radius: 3px 3px 0 0;
+      & span {
+        display: block;
+        background: @gloss-bg-color;
+        padding: 10px 10px 10px 7px;
+      }
+    }
+    & .nav-new,
+      .nav-leader,
+      .nav-sale {
+      padding: 12px 0 12px 55px;
+      & a {
+        .a-text;
+      }
+      & a:hover {
+        .a-hover;
+      }
+    }
+    & .nav-new {
+      background: @new-lab-color;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    & .nav-leader {
+      background: @leader-lab-color;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    & .nav-sale {
+      background: @sale-lab-color;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+  & .section {
+    height: inherit;
+    flex: 2;
+    background: #f25544;
+  }
+  & .aside-right {
+    height: inherit;
+    flex: 1;
+    background: @bar-color;
+  }
+
+}

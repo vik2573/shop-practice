@@ -1,11 +1,11 @@
 @import "partials/params";
 @import "partials/mixin";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Verdana');
 
 html, body {
   .clean;
   width: 100%;
-  font-family: 'Regular', sans-serif;
+  font-family: 'Verdana', sans-serif;
   color: @font-color;
 }
 
@@ -16,22 +16,19 @@ h1, h2, h3, h4, h5, h6, p {
 a {
   text-decoration: none;
 }
+
 img {
   border: none;
 }
 
-.view-port {
-  width: @view-port;
-  margin: 0 auto;
-}
 body {
   background: @light-color;
 }
 
-.wrapper {
+.view-port {
   display: flex;
   flex-direction: column;
-  width: @view-port;
+  .width-body;
   overflow: hidden;
   background-color: @main-bg-color;
   margin: 0 auto;
