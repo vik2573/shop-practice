@@ -1,18 +1,18 @@
 @import "partials/params";
 @import "partials/mixin";
 
-.wrapper-main {
+#wrapper-main {
 
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 5px;
   margin-left: 6px;
   margin-right: 6px;
 
   & .aside-left {
     flex: 1;
-    height: inherit;
+    max-width: 23%;
+    align-items: center;
     background: @bar-color;
     & .left-bar {
 
@@ -209,14 +209,51 @@
       }
     }
   }
-  & .section {
-    height: inherit;
+  & .section-wrapper {
     flex: 2;
-    background: #f25544;
+    max-width: 50%;
+    background: @main-bg-color;
+    & .content {
+      & h1 {
+        text-align: center;
+        margin: 15px 0 15px 0;
+      }
+      & .catalog-index {
+        overflow: hidden;
+        & .product-index {
+          display: inline-block;
+          max-width: 50%;
+          text-align: center;
+          margin: 0 20px 75px 40px;
+          & h2 {
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            & a {
+              color: @font-hover-color;
+              text-decoration: underline;
+            }
+            & a:hover {
+              text-decoration: none;
+            }
+          }
+          & p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            & span {
+              margin-left: 10px;
+              font-size: 30px;
+              font-family: 'Candara', sans-serif;
+            }
+          }
+        }
+      }
+    }
   }
   & .aside-right {
-    height: inherit;
     flex: 1;
+    max-width: 27%;
+
     background: @bar-color;
   }
 
