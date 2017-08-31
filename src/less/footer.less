@@ -1,0 +1,68 @@
+@import "partials/params";
+@import "partials/mixin";
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  background: @footer-bg-color;
+
+  & .flogo {
+    margin-top: 40px;
+    margin-left: 15px;
+    color: @font-footer-color;
+    & p {
+      font-size: 14px;
+      padding-top: 10px;
+    }
+
+  }
+  & .fmenu {
+    margin-top: 15px;
+    color: @font-footer-color;
+    font-size: 14px;
+    & p {
+      text-align: center;
+    }
+    & .footer-menu {
+      display: flex;
+      justify-content: space-around;
+      & ul {
+
+        list-style: none;
+        margin: 15px;
+        line-height: 1.6;
+        & li {
+          text-decoration: underline;
+          & a {
+            font-size: 14px;
+            color: @font-footer-color;
+          }
+        }
+        & li:hover {
+
+          text-decoration: none;
+          & a {
+            color: @font-wight-color;
+          }
+        }
+    }
+
+    }
+  }
+  & .fphone {
+    margin-top: 15px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    color: @font-footer-color;
+    text-align: right;
+    font-size: 12px;
+    & h2 {
+      font-size: 14px;
+    }
+    & h1 {
+      font-size: 21px;
+      margin-bottom: 25px;
+    }
+  }
+}
