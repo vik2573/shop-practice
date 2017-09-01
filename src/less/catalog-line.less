@@ -1,0 +1,61 @@
+@import "partials/params";
+@import "partials/mixin";
+
+.catalog-line {
+  & .bread-crumbs {
+    font-size: 14px;
+    margin: 15px 0 33px 20px;
+    & a {
+      color: @news-color;
+      text-decoration: underline;
+    }
+    & a:hover {
+      text-decoration: none;
+    }
+    & span {
+      color: @bread-span-color;
+    }
+  }
+  & .line-sort {
+    font-size: 12px;
+    color: @line-sort-color;
+    background: @line-sort-bg-color;
+    border-bottom: 1px solid @line-sort-border-color;
+    padding-bottom: 10px;
+    margin-left: 15px;
+
+    & .vid-img {
+        position: relative;
+        top: 3px;
+      & a{
+        padding-right: 2px;
+      }
+    }
+    & .sort-name {
+      & a {
+        padding: 0 10px 0 12px;
+        margin-left: 5px;
+        color: @line-sort-color;
+        text-decoration: underline;
+      }
+      & a.sort-top {
+        background: @sort-top-color;
+      }
+      & a.sort-top-act {
+        background: @sort-top-act-color;
+        color: @font-color;
+      }
+      & a.sort-bot-act {
+        background: @sort-bot-act-color;
+        color: @font-color;
+      }
+      & a.sort-bot {
+        background: @sort-bot-color;
+      }
+      & a:hover {
+        text-decoration: none;
+
+      }
+    }
+  }
+}
