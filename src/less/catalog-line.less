@@ -58,4 +58,45 @@
       }
     }
   }
+  & .product-line {
+    display: flex;
+    justify-content: center;
+    margin: 40px 15px 0 15px;
+    & .product-line-img {}
+    & .product-line-describe {
+      margin: 0 5px;
+      & h2 {
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 7px;
+        & a {
+          color: @describe-title-color;
+          text-decoration: underline;
+        }
+      }
+      & p {
+        font-size: 12px;
+      }
+    }
+    & .product-line-price {
+      & p {
+        font-size: 12px;
+        padding-bottom: 3px;
+        & span {
+          font-size: 24px;
+          font-family: 'Candara', sans-serif ;
+        }
+      }
+      & .cat-line-more {
+        & a {
+          color: @font-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  & .product-line:last-child {
+    padding-bottom: 40px;
+    border-bottom: 2px solid @describe-border-color;
+  }
 }
