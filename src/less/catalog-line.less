@@ -95,8 +95,28 @@
       }
     }
   }
-  & .product-line:last-child {
+  & .product-line:last-of-type {
     padding-bottom: 40px;
     border-bottom: 2px solid @describe-border-color;
+  }
+  & .pager {
+    font-size: 15px;
+    background: @pager-bg-color;
+    color: @describe-title-color;
+    margin: 15px;
+    & a {
+      font-size: 14px;
+      color: @line-sort-color;
+      text-decoration: underline;
+      padding: 0 3px;
+      & img {
+       position: relative;
+        top: 5px;
+      }
+      & a:hover {
+        text-decoration: none;
+        color: @line-sort-color;
+      }
+    }
   }
 }
