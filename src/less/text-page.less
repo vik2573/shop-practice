@@ -1,0 +1,62 @@
+@import "partials/params";
+@import "partials/mixin";
+
+.text-page {
+  margin: 0 20px 0 15px;
+  & .title-describe {
+    padding-bottom: 20px;
+    line-height: 1.8;
+    & h1 {
+      font-size: 24px;
+      font-weight: normal;
+      color: @describe-title-color;
+    }
+    & h2 {
+     font-size: 20px;
+      font-weight: normal;
+    }
+    & h3 {
+     font-size: 18px;
+      font-weight: normal;
+    }
+    & h4 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+    & h5 {
+      font-size: 12px;
+      font-weight: normal;
+    }
+    & h6 {
+      font-size: 10px;
+      font-weight: normal;
+    }
+  }
+  & a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: @font-color;
+  }
+  & a:first-of-type {
+    color: @describe-title-color;
+  }
+  & .article-value {
+    margin: 15px 0;
+    & h3 {
+     font-size: 18px;
+    }
+    & p {
+      font-size: 12px;
+    }
+  }
+  & .lists-value {
+    padding-left: 20px;
+    & h3 {
+      font-size: 18px;
+      padding-bottom: 15px;
+    }
+    & ul {
+      font-size: 12px;
+    }
+  }
+}
