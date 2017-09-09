@@ -1,0 +1,158 @@
+@import "partials/params";
+@import "partials/mixin";
+
+.list-order {
+  width: 100%;
+  margin: 10px;
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin: 5px 0 10px 0;
+  }
+
+  & form {
+    & .order-main-table {
+      width: 100%;
+
+      & .z_top {
+        font-size: 12px;
+        color: @news-color;
+        padding-bottom: 10px;
+        background: @table-bg-color;
+        border-bottom: 1px solid @line-sort-border-color;
+      }
+      & .z_top:first-of-type {
+        padding-left: 10px;
+      }
+      & .z_name {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70%;
+        & a:last-of-type {
+          position: absolute;
+          top: 10px;
+          font-size: 12px;
+          color: @describe-title-color;
+          padding-left: 10px;
+          text-decoration: underline;
+        }
+      }
+
+      & .z_col {
+        & .kolvo {
+          width: 45px;
+          text-align: center;
+        }
+      }
+      & .z_price {
+        font-size: 24px;
+        font-family: "Candara", sans-serif;
+      }
+      & .z_bot {
+        padding-top: 10px;
+        font-size: 14px;
+        background: @table-bg-color;
+        border-top: 1px solid @line-sort-border-color;
+        & span {
+          font-size: 18px;
+          font-family: "Candara", sans-serif;
+        }
+      }
+    }
+    & .delivery-method {
+      margin-top: 40px;
+      & h4 {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.8;
+      }
+      & .radio {
+        & label {
+          font-size: 12px;
+          color: @radio-color;
+          line-height: 1.8;
+        }
+        & input[checked]+label {
+          color: black;
+        }
+      }
+    }
+    & .inform-delivery {
+      & h3 {
+        padding-bottom: 20px;
+        padding-top: 40px;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      & .form-delivery {
+        margin-bottom: 130px;
+      & .form-group {
+        position: relative;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        & label {
+          font-size: 14px;
+        }
+        & input {
+          height: 30px;
+          width: 350px;
+        }
+        & input[placeholder] {
+          font-size: 12px;
+          font-style: italic;
+        }
+        & textarea {
+          height: 85px;
+          width: 350px;
+        }
+        & textarea[placeholder] {
+          font-size: 12px;
+          font-style: italic;
+        }
+      }
+      & .form-group:first-of-type {
+        & label {
+          padding-right: 110px;
+        }
+      }
+      & .form-group:nth-of-type(2) {
+        & label {
+          padding-right: 92px;
+        }
+      }
+      & .form-group:nth-of-type(3) {
+        & label {
+          padding-right: 81px;
+        }
+      }
+      & .form-group:nth-of-type(4) {
+        & label {
+          padding-right: 30px;
+        }
+      }
+      & .form-group:last-of-type {
+        padding-top: 10px;
+        & label {
+          position: absolute;
+          top: 5px;
+        }
+        & textarea {
+          position: absolute;
+          left: 179px;
+        }
+      }
+      }
+      & .btn {
+        .clean();
+        height: 48px;
+        width: 232px;
+        border-radius: 5px;
+        border: none;
+        background: @ordering-bg-color;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ const browserSync = require('browser-sync').create();
 const config = {
 	paths: {
 		less: './src/less/**/*.less',
-		html: './public/index-detail.html'
+		html: './public/index-order.html'
 	},
 	output: {
 		path: 'public',

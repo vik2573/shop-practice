@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/functions.js"></script>
+	<title>Shop-practice</title>
+	<link rel="stylesheet" href="bundle.min.css">
+</head>
+<body>
+<div class="view-port">
+	<header id="header">
+		<a href="#"><img class="logo" src="images/new-hd.jpg" alt="Интернет магазин сотовых телефонов"></a>
+		<div class="wrapper-head">
+		  <div class="head-contact">
+		  	<p class="contact-fone">Телефон:<br>
+		  		<span>8 (800) 700-00-01</span></p>
+		  	<p class="contact-time">Режим работы:<br>
+					<span>Будние дни: с 9:00 до 18:00<br>
+		  		Суббота, Воскресенье - выходные</span></p>
+				<img src="images/phone-img.jpg" alt="">
+		  </div>
+		  <div class="search-head">
+		  	<form method="get" action="">
+		  		<input type="text" name="search" id="quickquery" placeholder="Что вы хотите купить?">
+		  		<script type="text/javascript">
+		  			//<![CDATA[
+		  			placeholderSetup('quickquery');
+		  			//]]>
+		  		</script>
+					<button type="submit" class="btn btn-default">Найти</button>
+		  	</form>
+		  </div>
+		</div>
+	</header>
+	<nav id="menu">
+		<a href="#">Главная</a>
+		<a href="#">О магазине</a>
+		<a href="#">Оплата и доставка</a>
+		<a href="#">Покупка в кредит</a>
+		<a href="#">Контакты</a>
+	</nav>
+	<main id="wrapper-main">
+    <section class="list-order">
+			<h2>Оформление заказа</h2>
+			<form method="post" action="">
+			  <table class="order-main-table" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+						<td class="z_top">наименование</td>
+						<td class="z_top">количество</td>
+						<td class="z_top">стоимость</td>
+					</tr>
+				<tr>
+					<td class="z_name">
+						<a href="#"><img src="images/img-order.jpg" title="удалить товар"></a>
+						<a href="#">Samsung Galaxy S Advance 8Gb (черный)</a>
+					</td>
+					<td class="z_col">
+						<div>
+							<label>
+								<input class="kolvo" type="text" value="1">
+							</label>
+						</div>
+					</td>
+					<td class="z_price">12390</td>
+					<td class="z_del"><a href="#"><img src="images/delete.jpg" title="удалить товар"></a></td>
+				</tr>
+				<tr>
+					<td class="z_name">
+						<a href="#"><img src="images/img-order.jpg" title="удалить товар"></a>
+						<a href="#">Samsung Galaxy S Advance 8Gb (черный)</a>
+					</td>
+					<td class="z_col">
+						<div>
+							<label>
+								<input class="kolvo" type="text" value="1">
+							</label>
+						</div>
+					</td>
+					<td class="z_price">12390</td>
+					<td class="z_del"><a href="#"><img src="images/delete.jpg" title="удалить товар"></a></td>
+				</tr>
+				<tr>
+					<td class="z_name">
+						<a href="#"><img src="images/img-order.jpg" title="удалить товар"></a>
+						<a href="#">Samsung Galaxy S Advance 8Gb (черный)</a>
+					</td>
+					<td class="z_col">
+						<div>
+							<label>
+								<input class="kolvo" type="text" value="1">
+							</label>
+						</div>
+					</td>
+					<td class="z_price">12390</td>
+					<td class="z_del"><a href="#"><img src="images/delete.jpg" title="удалить товар"></a></td>
+				</tr>
+				<tr>
+					<td class="z_bot">&nbsp;&nbsp;&nbsp;&nbsp;Итого:</td>
+					<td class="z_bot" colspan="3" align="right">3 шт&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>34569 руб.</span></td>
+				</tr>
+			</table>
+				<div class="delivery-method">
+					<h4>Способы доставки:</h4>
+					<div class="radio">
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						<label for="optionsRadios1">Курьером, 200</label>
+				</div>
+				  <div class="radio">
+
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						<label for="optionsRadios2">Самовывоз, бесплатно</label>
+				</div>
+				  <div class="radio">
+
+						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+						<label for="optionsRadios3">В магазин, бесплатно</label>
+				</div>
+				</div>
+				<div class="inform-delivery">
+					<h3>Информация для доставки:</h3>
+					<div class="form-delivery">
+					  <div class="form-group">
+						<label for="InputName1">ФИО</label>
+						<input type="text" class="form-control" id="InputName1" placeholder="Пример: Иванов Сергей Александрович">
+					</div>
+				  	<div class="form-group">
+						<label for="InputEmail2">Е-маил</label>
+						<input type="email" class="form-control" id="InputEmail2" placeholder="Пример: test@mail.ru">
+					</div>
+				  	<div class="form-group">
+						<label for="InputName3">телефон</label>
+						<input type="text" class="form-control" id="InputName3" placeholder="Пример: 8 937 999 99 99">
+					</div>
+				  	<div class="form-group">
+						<label for="InputName4">Адрес доставки</label>
+						<input type="text" class="form-control" id="InputName4" placeholder="Пример: г. Москва, пр. Мира, ул. Петра Великого д.19, кв 51.">
+					</div>
+					  <div class="form-group">
+						<label for="InputArea">Примечание</label>
+					  <textarea class="form-control" rows="3" id="InputArea" placeholder="Пример: Позвоните пожалуйста после 10 вечера,
+до этого времени я на работе "></textarea>
+					</div>
+					</div>
+					<button type="submit" class="btn btn-default"></button>
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer id="footer">
+		<div class="flogo">
+			<a href="#"><img src="images/footer-logo.jpg" alt="Интернет магазин сотовых телефонов">
+			</a>
+			<p>Сopyright © 2012</p>
+		</div>
+		<div class="fmenu">
+			<p>Меню:</p>
+			<div class="footer-menu">
+			  <ul>
+			  	<li><a href="#">Главная</a></li>
+			  	<li><a href="#">О магазине</a></li>
+			  	<li><a href="#">Оплата и доставка</a></li>
+			  </ul>
+			  <ul>
+			  	<li><a href="#">Покупка в кредит</a></li>
+			  	<li><a href="#">Контакты</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="fphone">
+			<h2>Телефон:</h2>
+			<h1>8 (800) 700-00-01</h1>
+			<h2>Режим работы:</h2>
+			<p>Будние дни: с 9:00 до 18:00<br>
+				Суббота, Воскресенье - выходные </p>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script_sl.js"></script>
+</body>
+</html>
